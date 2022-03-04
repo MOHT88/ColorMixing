@@ -54,19 +54,40 @@ class ViewController: UIViewController {
 
     @IBAction func redSliderAction() {
         redSliderView.text = String(round(redSlider.value * 100) / 100)
+        
+        resultColorView.backgroundColor = .init(
+            red: CGFloat(redSlider.value),
+            green: CGFloat(greenSlider.value),
+            blue: CGFloat(blueSlider.value),
+            alpha: 1
+        )
+        
     }
                                     
                                     
     @IBAction func greenSliderAction() {
         greenSliderView.text = String(round(greenSlider.value * 100) / 100)
+       
+        resultColorView.backgroundColor = .init(
+            red: CGFloat(redSlider.value),
+            green: CGFloat(greenSlider.value),
+            blue: CGFloat(blueSlider.value),
+            alpha: 1
+        )
+        
     }
     
     
     @IBAction func blueSliderAction() {
         blueSliderView.text = String(round(blueSlider.value * 100) / 100)
+       
+        resultColorView.backgroundColor = .init(
+            red: CGFloat(redSlider.value),
+            green: CGFloat(greenSlider.value),
+            blue: CGFloat(blueSlider.value),
+            alpha: 1
+        )
         
     }
-    
-    
 }
 
