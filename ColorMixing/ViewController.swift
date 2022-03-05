@@ -26,7 +26,6 @@ class ViewController: UIViewController {
         greenSliderFunction()
         blueSliderAction()
     }
-    
     @IBAction func redSliderAction() {
         redSliderView.text = String(round(redSlider.value * 100) / 100)
         
@@ -37,7 +36,6 @@ class ViewController: UIViewController {
             alpha: 1
         )
     }
-                                    
     @IBAction func greenSliderAction() {
         greenSliderView.text = String(round(greenSlider.value * 100) / 100)
        
@@ -48,7 +46,6 @@ class ViewController: UIViewController {
             alpha: 1
         )
     }
-    
     @IBAction func blueSliderAction() {
         blueSliderView.text = String(round(blueSlider.value * 100) / 100)
        
